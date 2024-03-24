@@ -1,6 +1,6 @@
-import coremltools
+import coremltool
 
-coreml_model = coremltools.converters.caffe.convert(('oxford102.caffemodel', 'deploy.prototxt'), image_input_names = 'data', class_labels = 'flowers.txt')
+coreml_model = coremltool.converters.caffe.convert(('oxford102.caffemodel', 'deploy.prototxt'), image_input_names = 'data', class_labels = 'flowers.txt')
 coreml_model.author = 'Jimmie Goode'
 coreml_model.license = 'Unknowns'
 coreml_model.short_description = 'Classifying images in the Oxford 102 flower dataset with CNNs'
